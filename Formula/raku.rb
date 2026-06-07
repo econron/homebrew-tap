@@ -5,21 +5,21 @@
 class Raku < Formula
   desc "GitHub PR review workflow helper"
   homepage "https://github.com/econron/raku"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/econron/raku/releases/download/v0.1.1/raku_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "ad9ee9ac2a73f09a8b4d8756e0ba8f63055cd650e4686029e6771e3146ac9e3f"
+      url "https://github.com/econron/raku/releases/download/v0.1.2/raku_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "279465b2fe677b1e3dbd610507c7e4635523fba4675c1c065b629653046ff357"
 
       define_method(:install) do
         bin.install "raku"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/econron/raku/releases/download/v0.1.1/raku_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "03086b037db54d62ecbd1b8d7d3cc760d6eb29942b17d0a5316dadc27c2867de"
+      url "https://github.com/econron/raku/releases/download/v0.1.2/raku_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "8e7fa8607cb3ce961eed82cd76e140803b9851d19a1d3b7024385a14e7b78976"
 
       define_method(:install) do
         bin.install "raku"
@@ -29,15 +29,15 @@ class Raku < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/econron/raku/releases/download/v0.1.1/raku_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "d05e1475b2907d62d88e6ccb53d6431f44ea80a810948223266a66ff33e502e1"
+      url "https://github.com/econron/raku/releases/download/v0.1.2/raku_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "02aa6c94adf75fa8af7bd207eb7533127f596a31eae16fdc599e50743bcd905b"
       define_method(:install) do
         bin.install "raku"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/econron/raku/releases/download/v0.1.1/raku_0.1.1_Linux_arm64.tar.gz"
-      sha256 "bed7ec4fed145c144adde4f1cb4708d1543531d97a246dbfdf5e6431b4ff6cac"
+      url "https://github.com/econron/raku/releases/download/v0.1.2/raku_0.1.2_Linux_arm64.tar.gz"
+      sha256 "00a9a274ce3dbb652070cfada91dacdf53a1d6be968f35fb630e8f6cd91c6a19"
       define_method(:install) do
         bin.install "raku"
       end
